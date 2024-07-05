@@ -15,8 +15,8 @@ puppeteer.launch({
     try{
         const loginBtn = await page.$('#menuItem5');
         await loginBtn.click();
-        await page.type('.-email-input', 'gmail.com');
-        await page.type('.-pass-input', '');
+        await page.type('.-email-input', 'Enter the login email ID');
+        await page.type('.-pass-input', 'Enter the password here');
         const submitBtn = await page.$('#submitLogin');
         await submitBtn.click();
     }
