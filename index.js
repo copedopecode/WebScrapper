@@ -4,8 +4,8 @@ puppeteer.use(StealthPlugin())
 
 puppeteer.launch({ 
     headless: false,
-    executablePath: "C:/Program Files/Google/Chrome/Application/chrome.exe",
-    userDataDir: "C:/Users/harsh/AppData/Local/Google/Chrome/User Data/Default"
+    executablePath: "Path/to/Chrome.exe",
+    userDataDir: "Path/to/Chrome Profile"
 })
 .then(async browser => {
     console.log('Running tests..');
